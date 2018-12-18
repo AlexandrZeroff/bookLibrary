@@ -1,0 +1,29 @@
+
+  "users":[
+ {
+    "login":"Admin",
+	"password":"9797",
+	"firstname":"Alexandr",
+	"lastname":"Zeroff",
+	"birthdate":"27.06.2002",
+	"books":{[
+	          {"name":"Гарри Поттер",
+			   "autor":"Киплинг",
+			   "year":"2006"},
+			  {"name":"",
+			   "autor":"",
+			   "year":""}
+	         ]
+			}
+ }
+]
+
+
+
+
+
+
+
+
+
+

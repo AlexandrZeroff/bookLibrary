@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="scripts.js"></script>
+<link rel="SHORTCUT ICON" href="booksicon.jpg" type="image/x-icon">
+<link rel="stylesheet" rev="stylesheet" type="text/css" href="main.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>User page</title>
+</head>
+<body onload="getUserBooks()">
+<header>
+<div class="container">
+ <nav>
+      <ul class="ul1">
+        <li><a href="main.html"><b>Main</b></a></li>
+		<li><a href="books.html"><b>Books</b></a></li>
+        <li><a href="users.html"><b>Users</b></a></li>
+		<li><a href="userpage.html"><b>Library</b></a></li>
+        
+	    <li><a href="signin.html"><b>Sign in</b></a></li>
+      </ul>
+    </nav>
+</header></div>
+<div id="container">
+<h2 class="headers">Добро пожаловать! Это ваша личная библиотека. Здесь вы видите список книг, которые взяли, а также можете брать новые. Они также отобразятся в списке.<br>
+<span id="spanwarning">ВНИМАНИЕ!</span> Вы можете взять не более 20 книг одновременно!<br> 
+Необходимо <a href="signin.html">войти</a> для того, чтобы увидеть список своих книг.</h2>
+<div class="row">
+<div class="col-3-4">
+<h3 id="tablehead" class="headers">Ваши книги</h3>
+<table id="usertable" class="table">
+<thead>
+<tr class="rowheader">
+ <th><b>Название книги</b></th>
+ <th><b>Имя автора</b></th>
+ <th><b>Год издания</b></th>
+ <th><b>Удалить</b></th>
+</tr>
+</thead>
+</table>
+</div>
+<div class="col-1-4">
+<fieldset class="fieldsetbook">
+<legend><b>Взять новую книгу</b></legend>
+<form method='post' class="mainform" >
+<p class="bookname">
+ <label for="bookname">Название книги</label>
+ <input id="bookname" type="text" name="bookname" />
+ </p>
+<p class="autor">
+ <label for="autor" >Автор</label>
+ <input id="autor" type="text" name="autor" />
+ </p>
+<p class="year">
+ <label for="year" >Год издания</label>
+ <input id="year" type="text" name="year" />
+</p>
+<p>
+ <button id="btnadd" class="send" type="button" onclick="addBook()">Взять книгу</button>
+ </p>
+ </form>
+ </fieldset>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="SHORTCUT ICON" href="booksicon.jpg" type="image/x-icon">
+<script type="text/javascript" src="scripts.js"></script>
+<script src="users.json" type="application/json"></script>
+<link rel="stylesheet" rev="stylesheet" type="text/css" href="main.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ExpressLib-Sign in</title>
+</head>
+<body>
+<header>
+<div class="container">
+ <nav>
+      <ul>
+        <li><a href="main.html"><b>Main</b></a></li>
+		<li><a href="books.html"><b>Books</b></a></li>
+        <li><a href="users.html"><b>Users</b></a></li>
+		<li><a href="userpage.html"><b>Library</b></a></li>
+	    <li><a  href="signin.html"><b>Sign in</b></a></li>
+      </ul>
+    </nav>
+</header></div>
+<div id="container">
+<p class="par">На этой странице вы можете создать аккаунт или войти, если у вас уже есть аккаунт.</p>
+<div class="row">
+<div class="col-1-2">
+<fieldset class="fieldset">
+<legend>Registration</legend>
+<p class="par1">Введите свое имя, фамилию, дату рождения, а также придумайте логин и пароль.</p>
+<form method='post' class="mainform" >
+ <p class="login">
+ <input id="log" type="text" name="login" />
+ <label for="login">Login</label>
+ </p>
+ <p class="password">
+ <input id="pass" type="text" name="password" />
+ <label for="password" >Password</label>
+ </p>
+ <p class="birthdate">
+ <input id="birthdate" type="text" name="birthdate" />
+ <label for="birthdate" >Date of birth</label>
+ </p>
+ <p class="firstname">
+ <input id="firstname" type="text" name="firstname" />
+ <label for="firstname" >First name</label>
+ </p>
+ <p class="lastname">
+ <input id="lastname" type="text" name="lastname" />
+ <label for="lastname" >Last name</label>
+ </p>
+ <fieldset class="fieldset">
+  <legend>Choose your interests</legend>
+  <div>
+    <input type="checkbox" id="coding" name="interest[]" value="coding">
+    <label for="coding">Coding</label>
+  </div>
+  <div>
+    <input type="checkbox" id="music" name="interest[]" value="music">
+    <label for="music">Music</label>
+  </div>
+  <div>
+    <input type="checkbox" id="books" name="interest[]" value="books" >
+    <label for="books">Books</label>
+  </div>
+  <div>
+    <input type="checkbox" id="history" name="interest[]" value="history">
+    <label for="history">History</label>
+  </div>
+  <div>
+    <input type="checkbox" id="animals" name="interest[]" value="animals">
+    <label for="animals">Animals</label>
+  </div>
+  <div>
+    <input type="checkbox" id="collecting" name="interest[]" value="collecting">
+    <label for="collecting">Collecting</label>
+  </div>
+  <div>
+    <input type="checkbox" id="travelling" name="interest[]" value="travelling">
+    <label for="travelling">Travelling</label>
+  </div>
+  <div>
+    <input type="checkbox" id="hunting" name="interest[]" value="hunting">
+    <label for="hunting">Hunting</label>
+  </div>
+  <div>
+    <input type="checkbox" id="fishing" name="interest[]" value="fishing">
+    <label for="fishing">Fishing</label>
+  </div>
+  <div>
+    <input type="checkbox" id="modeling" name="interest[]" value="modeling">
+    <label for="modeling">Modeling</label>
+  </div>
+  <div>
+    <input type="checkbox" id="other" name="interest[]" value="other">
+    <label for="other">Other...</label>
+  </div>
+</fieldset>
+<p>
+  <button class="send" type="button" onclick="registration()"><b>Registration</b></button>
+</p>
+<p>
+  <button class="send" type="button" onclick="checkArray()"><b>Check</b></button>
+</p>
+</fieldset></div>
+<div class="col-1-2">
+<fieldset class="fieldset">
+<legend>Autorization</legend>
+<p class="par1">Введите свой логин и пароль.</p>
+<form method='post' class="mainform" >
+<p class="login">
+<input id="login" type="text" name="login"/>
+<label for="login">Login</label>
+</p>
+<p class="password">
+<input id="password" type="text" name="password"/>
+<label for="password">Password</label>
+</p>
+<p>
+ <button class="send" type="button" onclick="autorization()"><b>Sign in</b></button>
+ </p>
+ <p id="p"></p>
+</form>
+</fieldset>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
